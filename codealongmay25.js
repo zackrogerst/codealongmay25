@@ -21,10 +21,12 @@ if (jonSnowAttack > jamieLannisterAttack) {
 }
 
 if (jonSnowHealth <= jamieLannisterAttack) {
+    console.log("Jamie attacked Jon!");
     console.log("Jon Snow has been slain");
 } else {
     // jonSnowHealth = jonSnowHealth - jamieLannisterAttack;
     jonSnowHealth -= jamieLannisterAttack;
+    console.log("Jamie attacked Jon!");
     console.log(`Jon Snow's health is down to ${jonSnowHealth}`);
 }
 
@@ -32,10 +34,14 @@ if (jonSnowHealth <= jamieLannisterAttack) {
 //jon kicks up a shield
 jonSnowDefense += 25;
 
+console.log(`Jon kicked up a shield worth ${jonSnowDefense} defense points`);
+
 if (jonSnowHealth <= jamieLannisterAttack - jonSnowDefense) {
+    console.log("Jamie attacked Jon!");
     console.log("Jon Snow has been slain");
 } else {
     jonSnowHealth -= (jamieLannisterAttack - jonSnowDefense);
+    console.log("Jamie attacked Jon!");
     console.log(`Jon Snow's health is down to ${jonSnowHealth}`);
 }
 
