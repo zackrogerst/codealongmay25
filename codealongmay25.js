@@ -41,13 +41,13 @@ if (jonSnowHealth <= jamieLannisterAttack - jonSnowDefense) {
 
 // peasant throws health potion of 50
 const healthKit = 50;
-if ((jonSnowHealth + healthKit) >= 100){
+if ((jonSnowHealth + healthKit) >= 100) {
     jonSnowHealth = 100;
-    console.log("Peasant threw a potion at Jon!")
-    console.log(`Jon was healed ${healthKit} points to ${jonSnowHealth}.`)
-    console.log("Jon's Health is Full.")
+    console.log("Peasant threw a potion at Jon!");
+    console.log(`Jon was healed ${healthKit} points to ${jonSnowHealth}.`);
+    console.log("Jon's Health is Full.");
 } else {
     jonSnowHealth += healthKit;
-    console.log(`Jon was healed ${healthKit} points to ${jonSnowHealth}.`)
+    console.log(`Jon was healed ${healthKit} points to ${jonSnowHealth}.`);
 }
 
